@@ -5,11 +5,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "chandu": "node index.js"
+    "chandu": "nodemon index.js"
   },
   "author": "chandan kumar",
   "license": "ISC",
   "devDependencies": {
+    "nodemon": "^3.1.10",
     "prettier": "3.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
   }
 }
