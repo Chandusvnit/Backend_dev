@@ -1,0 +1,15 @@
+{
+  "name": "udemy",
+  "version": "1.0.0",
+  "description": "backend , node",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "chandu": "node index.js"
+  },
+  "author": "chandan kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}
