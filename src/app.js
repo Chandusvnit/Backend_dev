@@ -11,9 +11,14 @@ app.use(express.static("public"))
 app.use(cors({
     origin:process.env.CORS_ORIGIN?.split(",") ||"http://localhost:5173/",
     credentials:true,
-    methods : ["GET" ,"POST", "PATCH" ,"DELETE" ,"PUT" ,"PATCH" ,"OPTION"],
+    methods : ["GET" ,"POST", "PATCH" ,"DELETE" ,"PUT" ,"PATCH" ,"OPTIONS"],
     allowedHeaders : ["Content-Type" ,"Authorization"]
 }))
+
+//import the routes
+import router from "./routes/healthcheck.route.js";
+
+app.use("/api/v1/healthCheck" , router);
 
 app.get('/' ,(req , res)=>{
     res.send("Chalo suru karte hai");
